@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap");
+
+:root {
+  --dark-grey: #343840;
+  --dark-blue: #193559;
+  --font-color: #445876;
+  --cyan: #9cd9d9;
+  --background-color: #ebebf2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish", sans-serif;
+  line-height: 1.5;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+/*  main logo / nav  */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dark-grey);
+  padding: 10px 0 20px 0;
+}
+
+header h1 {
+  width: fit-content;
+  background-color: var(--cyan);
+  color: var(--dark-grey);
+  padding: 0 15px 0 70px;
+  font-weight: 700;
+  font-size: 2.7rem;
+  letter-spacing: 1.5px;
+}
+
+header h1:hover {
+  background-color: var(--dark-grey);
+  color: var(--cyan);
+  cursor: default;
+}
+
+header nav {
+  margin-right: 50px;
+}
+
+header nav a {
+  font-size: 1.5rem;
+  color: var(--cyan);
+  margin-left: 20px;
+  padding: 0 10px 5px 10px;
+  border-bottom: 3px solid var(--cyan);
+}
+
+header nav a:hover {
+  background-color: var(--cyan);
+  color: var(--dark-grey);
+  cursor: default;
+  border-bottom: none;
+}
+
+/* hero banner */
+.hero-banner {
+  background-image: url("../images/02-hero-bg.jpg");
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.blue-foreground {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-color: #4960a662;
+  height: 100%;
+}
+
+.blue-foreground h2 {
+  margin: 0 50px 20px 0;
+  background-color: var(--cyan);
+  padding: 5px 20px 5px 20px;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* about me */
+
+#about {
+  display: grid;
+  grid-template-areas: "a-me par par par";
+  grid-template-columns: 20% 40% 40%;
+  color: var(--font-color);
+  padding-top: 50px;
+}
+
+#about h2 {
+  grid-area: a-me;
+  text-align: right;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  line-height: 4.5rem;
+  border-right: 5px solid var(--font-color);
+  padding-right: 20px;
+}
+
+#about p {
+  grid-area: par;
+  font-size: 1.5rem;
+  padding: 0 40px 20px 60px;
+}
+
+/* work */
+
+#work {
+  display: grid;
+  border: 1px solid red;
+  grid-template-areas: 
+  "work pj1 pj1"
+  "work pj2 pj3"
+  "work pj4 pj5";
+  grid-template-columns: 20% 40% 40%;
+  
+}
+
+#work .project-1 {
+  grid-area: pj1;
+  border: 1px solid rgb(17, 0, 255);
+  background-image: url("../images/02-portfolio-4.jpg");
+  background-position: left top;
+  height: 500px;
+
+}
