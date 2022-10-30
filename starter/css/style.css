@@ -18,6 +18,7 @@ body {
   font-family: "Mulish", sans-serif;
   line-height: 1.5;
   height: 100%;
+  background-color: #ededf6;
 }
 
 h1,
@@ -46,10 +47,11 @@ header h1 {
   width: fit-content;
   background-color: var(--cyan);
   color: var(--dark-grey);
-  padding: 0 15px 0 70px;
+  padding: 15px 15px 15px 90px;
   font-weight: 700;
-  font-size: 2.7rem;
-  letter-spacing: 1.5px;
+  font-size: 3.5rem;
+  line-height: 3rem;
+  letter-spacing: 0px;
 }
 
 header h1:hover {
@@ -59,15 +61,15 @@ header h1:hover {
 }
 
 header nav {
-  margin-right: 50px;
+  margin-right: 90px;
 }
 
 header nav a {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: var(--cyan);
   margin-left: 20px;
   padding: 0 10px 5px 10px;
-  border-bottom: 3px solid var(--cyan);
+  border-bottom: 4px solid var(--cyan);
 }
 
 header nav a:hover {
@@ -95,11 +97,10 @@ header nav a:hover {
 }
 
 .blue-foreground h2 {
-  margin: 0 50px 20px 0;
+  margin: 0 90px 20px 0;
   background-color: var(--cyan);
   padding: 5px 20px 5px 20px;
-  font-size: 2rem;
-  letter-spacing: 2px;
+  font-size: 2.5rem;
 }
 
 .page-wrapper {
@@ -123,34 +124,241 @@ header nav a:hover {
   font-size: 4rem;
   letter-spacing: 2px;
   line-height: 4.5rem;
-  border-right: 5px solid var(--font-color);
+  border-right: 6px solid var(--font-color);
   padding-right: 20px;
 }
 
 #about p {
   grid-area: par;
   font-size: 1.5rem;
-  padding: 0 40px 20px 60px;
+  padding: 0 90px 20px 60px;
+  width: 100%;
 }
 
 /* work */
 
 #work {
   display: grid;
-  border: 1px solid red;
-  grid-template-areas: 
-  "work pj1 pj1"
-  "work pj2 pj3"
-  "work pj4 pj5";
+  grid-template-areas:
+    "work pj1 pj1"
+    "work pj2 pj3"
+    "work pj4 pj5";
   grid-template-columns: 20% 40% 40%;
-  
+  margin-top: 50px;
+}
+
+#work h2 {
+  grid-area: work;
+  text-align: right;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  line-height: 4.5rem;
+  border-right: 6px solid var(--font-color);
+  padding-right: 20px;
+  color: var(--font-color);
 }
 
 #work .project-1 {
   grid-area: pj1;
-  border: 1px solid rgb(17, 0, 255);
-  background-image: url("../images/02-portfolio-4.jpg");
-  background-position: left top;
-  height: 500px;
+  height: 800px;
+  margin: 0 90px 20px 60px;
+  background-image: url("../images/02-portfolio-4-small.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  border: 8px solid #92cccd;
+}
 
+.project-1--foreground {
+  width: 100%;
+  height: 100%;
+  background-color: #84939fb5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 30px;;
+}
+
+.project-1--foreground:hover {
+  background-color: #84939f4f;
+}
+
+.project-1--foreground__label {
+  background-color: #92cccd;
+  width: fit-content;
+  padding: 20px;
+}
+
+.project-1--foreground__label h3 {
+  font-size: 2.5rem;
+  color:var(--dark-grey);
+}
+
+.project-1--foreground__label p {
+  font-size: 1.5rem;
+  color: var(--dark-grey);
+}
+
+#work .project-2 {
+  grid-area: pj2;
+  height: 250px;
+  margin: 0 10px 20px 60px;
+  background-image: url("../images/02-portfolio-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  border: 8px solid #92cccd;
+}
+
+.project-2--foreground {
+  width: 100%;
+  height: 100%;
+  background-color: #84939fb5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 30px;;
+}
+
+.project-2--foreground:hover {
+  background-color: #84939f4f;
+}
+
+.project-2--foreground__label {
+  background-color: #92cccd;
+  width: fit-content;
+  padding: 20px;
+}
+
+.project-2--foreground__label h3 {
+  font-size: 2.5rem;
+  color:var(--dark-grey);
+}
+
+.project-2--foreground__label p {
+  font-size: 1.5rem;
+  color: var(--dark-grey);
+}
+
+#work .project-3 {
+  grid-area: pj3;
+  height: 250px;
+  margin: 0 90px 20px 0px;
+  background-image: url("../images/02-portfolio-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  border: 8px solid #92cccd;
+}
+
+.project-3--foreground {
+  width: 100%;
+  height: 100%;
+  background-color: #84939fb5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 30px;;
+}
+
+.project-3--foreground:hover {
+  background-color: #84939f4f;
+}
+
+.project-3--foreground__label {
+  background-color: #92cccd;
+  width: fit-content;
+  padding: 20px;
+}
+
+.project-3--foreground__label h3 {
+  font-size: 2.5rem;
+  color:var(--dark-grey);
+}
+
+.project-3--foreground__label p {
+  font-size: 1.5rem;
+  color: var(--dark-grey);
+}
+
+#work .project-4 {
+  grid-area: pj4;
+  height: 250px;
+  margin: 0 90px 20px 60px;
+  background-image: url("../images/02-portfolio-3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  border: 8px solid #92cccd;
+}
+
+.project-4--foreground {
+  width: 100%;
+  height: 100%;
+  background-color: #84939fb5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 30px;;
+}
+
+.project-4--foreground:hover {
+  background-color: #84939f4f;
+}
+
+.project-4--foreground__label {
+  background-color: #92cccd;
+  width: fit-content;
+  padding: 20px;
+}
+
+.project-4--foreground__label h3 {
+  font-size: 2.5rem;
+  color:var(--dark-grey);
+}
+
+.project-4--foreground__label p {
+  font-size: 1.5rem;
+  color: var(--dark-grey);
+}
+
+#work .project-5 {
+  grid-area: pj5;
+  height: 250px;
+  margin: 0 90px 20px 5px;
+  background-image: url("../images/02-portfolio-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  border: 8px solid #92cccd;
+}
+
+.project-5--foreground {
+  width: 100%;
+  height: 100%;
+  background-color: #84939fb5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 30px;;
+}
+
+.project-5--foreground:hover {
+  background-color: #84939f4f;
+}
+
+.project-5--foreground__label {
+  background-color: #92cccd;
+  width: fit-content;
+  padding: 20px;
+}
+
+.project-5--foreground__label h3 {
+  font-size: 2.5rem;
+  color:var(--dark-grey);
+}
+
+.project-5--foreground__label p {
+  font-size: 1.5rem;
+  color: var(--dark-grey);
 }
