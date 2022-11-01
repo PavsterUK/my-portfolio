@@ -75,6 +75,7 @@ header nav a {
   margin-left: 20px;
   padding: 0 10px 5px 10px;
   border-bottom: 4px solid var(--cyan);
+  text-decoration: none;
 }
 
 header nav a:hover {
@@ -230,6 +231,8 @@ header nav a:hover {
   height: 250px;
   margin: 0 90px 20px -5px;
   background-image: url("../images/02-run-buddy.jpg");
+  background-position: left top;
+
 }
 
 #contact {
